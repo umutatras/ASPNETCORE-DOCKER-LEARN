@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "UdemyConsoleDocker": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<string>
+
+<h1>resimler</h1>
+@foreach(var item in Model)
+{
+    <div>
+   <img src="/images/@item" style="width:100px;height:100px;border:1px solid red;">
+
+   <h2>@item</h2>
+    </div>
+}
+
+<form method="post" asp-action="ImageShow">
+    <input type="text" name="name" />
+    <input type="submit" value="sil" />
+</form>

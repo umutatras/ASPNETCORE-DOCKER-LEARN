@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  sqlserver:
+    image: mcr.microsoft/mssql/server:2022-latest
+  microservice1.api:
+    image: microservice1-image
+    container_name: microservice1-container
+    build:
+      context: .
+      dockerfile: MicroService1.Api/Dockerfile
+  microservice2.api:
+    image: microservice2-image
+    container_name: microservice2-container
+    build:
+      context: .
+      dockerfile: MicroService2.Api/Dockerfile
+volumes:
+ sqlserver_volume:

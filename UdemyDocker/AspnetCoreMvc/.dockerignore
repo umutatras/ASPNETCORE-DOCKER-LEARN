@@ -1,0 +1,4 @@
+**/bin/ #projemdeki tüm klasörleri ara ve bin dosyasýný kopyalama dahil etme demek.
+**/obj/
+**/Dockerfile*
+**/.dockerignore*
